@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    min-height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url("imghome.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liens {
+    display: flex;
+}
+
+.liens li {
+    margin: 20px;
+}
+
+.liens li a {
+    color: white;
+    position: relative;
+}
+
+.liens li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #5e5e5e;
+    height: 3px;
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.liens li a:hover:after {
+    width: 0%;
+}
+
+.footer {
+    background-color: white;
+    color: #5e5e5e;
+    font-size: 1.3em;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin: 0;
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.footer a {
+    color: #5e5e5e;
+    margin-right: 15px;
+}
+
+.footer .contact {
+    flex: 1 1 auto;
+    text-align: right;
+    font-weight: bold;
+}
+
+.login-button {
+    background: transparent;
+    margin-right: 2%;
+    width: 130px;
+    height: 50px;
+    border: 2px solid #5e5e5e;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: white;
+    transition: .5s;
+}
+
+.login-button:hover {
+    background-color: #5e5e5e;
+}
+
+.box-login {
+   position: relative;
+   margin-left: 39%;
+   margin-top: 8%;
+   width: 400px;
+   height: 440px;
+   background: transparent;
+   border: solid 3px white;
+   border-radius: 20px;
+   backdrop-filter: blur(3px);
+   box-shadow: 0 0 30px rgba(255,255,255,0.2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.in-menu {
+    width: 600px;
+    height: 300px;
+    margin-left: 23%;
+    margin-top: 8%;
+}
+
+.in-menu h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.in-menu p {
+    font-size: 40px;
+    font-weight: 500;
+    color: #5e5e5e;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+.btn-redirection {
+    background: transparent;
+    color: white;
+    border: #5e5e5e 2px solid;
+    border-radius: 20px;
+    padding: 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-redirection ion-icon {
+    margin-left: 5px;
+}
+
+.box-login .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #5e5e5e;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;    
+}
+
+.input-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    padding: 15px 35px 0px 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.input-box label {
+    top: -3px;
+}
+
+
+.input-box .icon {
+   position: absolute;
+   right: 8px;
+   color: white; 
+   font-size: 1.2em;
+   line-height: 65px;
+}
+
+.remember {
+    font-size: 0.9em;
+    color: white;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember label input {
+    margin-right: 3px;
+    accent-color: #5e5e5e;
+}
+
+.remember a {
+    color: #5e5e5e;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    background-color: #5e5e5e;
+    border: white 1px solid;
+    cursor: pointer;
+    color: white;
+}
+
+.login-btn {
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 45px 0 15px;
+}
+
+.login-btn a {
+    color: #5e5e5e;
+}
+
+.login-btn a:hover {
+    text-decoration: underline;
+}
+
+.box-login {
+    display: none;
+}
+
+.box-login.active {
+    display: flex;
+}
+
+.in-menu.hidden {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        min-height: 70vh;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .liens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .liens li {
+        margin: 10px 0;
+    }
+
+    .login-button {
+        margin-top: 15px;
+    }
+
+    .box-login {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header {
+        min-height: 50vh;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+
+    .liens li a {
+        font-size: 0.9rem;
+    }
+
+    .login-button {
+        width: 90px;
+        height: 35px;
+        font-size: 0.8em;
+    }
+
+    .box-login {
+        width: 90%;
+        margin-top: 20%;
+    }
+
+    .footer p {
+        font-size: 0.7em;
+    }
+
+    .in-menu {
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+
+    .in-menu h1 {
+        font-size: 60px;
+    }
+
+    .in-menu p {
+        font-size: 30px;
+    }
+}
+

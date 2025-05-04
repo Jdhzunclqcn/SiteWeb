@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    background-color: #5e5e5e;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 8vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liens {
+    display: flex;
+}
+
+.liens li {
+    margin: 20px;
+    padding-top: 8px;
+}
+
+.liens li a {
+    color: white;
+    position: relative;
+}
+
+.liens li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.liens li a:hover:after {
+    width: 0%;
+}
+
+.login-button {
+    background: transparent;
+    margin-right: 2%;
+    width: 130px;
+    height: 50px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: white;
+    transition: .5s;
+}
+
+.login-button:hover {
+    background-color: white;
+}
+
+.footer {
+    background-color: white;
+    color: #5e5e5e;
+    font-size: 1.3em;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: #5e5e5e 1px solid;
+    box-shadow: 0 -5px 9px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.footer a {
+    color: #5e5e5e;
+    margin-right: 15px;
+}
+
+.footer .contact {
+    flex: 1 1 auto;
+    text-align: right;
+    font-weight: bold;
+}
+
+.main {
+    padding: 120px 5% 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 48px;
+    font-size: 40px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: initial;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.carte {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-7px);
+}
+
+.image-maison {
+    height: 550px;
+    background-color: white;
+    background-image: url('maison.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-appart {
+    height: 550px;
+    background-color: white;
+    background-image: url('appartement.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-terrain {
+    height: 550px;
+    background-color: white;
+    background-image: url('terrain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.dimensions {
+    color: black;
+    font-size: 17px;
+    margin: 16px 0;
+    font-weight: 300;
+}
+
+.infos {
+    padding: 24px;
+}
+
+.infos h3 {
+    color: black;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+.prix {
+    color: #5e5e5e;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 16px 0;
+}
+
+.btn {
+    background-color: #f0f0f0;
+    color:black;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: white;   
+}
+
+@media (max-width: 1200px) {
+    .properties-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main {
+        padding: 100px 4% 40px;
+    }
+
+    .property-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .liens li {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        min-height: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .liens {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .liens li {
+        margin: 10px 0;
+        padding-top: 0;
+    }
+
+    .login-button {
+        margin: 15px 0;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .main {
+        padding-top: 180px;
+    }
+
+    .properties-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .property-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer p, .footer .contact {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 3%;
+    }
+
+    .menu {
+        padding: 0.8rem 0;
+    }
+
+    .main {
+        padding: 160px 3% 30px;
+    }
+
+    .property-image {
+        height: 180px;
+    }
+
+    .property-info {
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+    }
+
+    .footer {
+        padding: 15px 3%;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyVisit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul class="liens">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="rendez-vous.html" target="_blank">Rendez-vous</a></li>
+                <li><a href="trouver-bien.html" target="_blank">Trouver un bien</a></li>
+                <li><a href="a_propos.html" target="_blank">À propos de nous</a></li>
+            </ul>
+
+            <button class="login-button">Connexion</button>
+        </nav>    
+
+        <section class="in-menu" id="inMenu">
+            <h1>EasyVisit</h1>
+            <p>l'avenir de l'immobilier</p>
+            <a href="trouver-bien.html" target="_blank" class="btn-redirection">Trouvez votre bien<ion-icon name="chevron-forward-outline"></ion-icon></a>
+        </section>
+        
+        <section class="box-login">
+            <div class="form-box login">
+                <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+    
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Mot de passe</label>
+                        </div>
+    
+                        <div class="remember">
+                            <label><input type="checkbox">Se souvenir de moi</label>
+                            <a href="#">Mot de passe oublié</a>
+                        </div>
+    
+                        <button type="submit" class="btn">Se connecter</button>
+    
+                        <div class="login-btn">
+                            <p>Pas de compte ? <a href="#" class="inscrire">S'inscrire</a></p>
+                        </div>
+                    </form>
+            </div>
+        </section>
+    </header>
+
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <footer class="footer">
+        <p>© EasyVisit 2025 - Tous droits réservés - <a href="#">Politique de confidentialité</a> – <a href="#">Mentions légales</a> – <a href="#">Agences immobilières</a></p>
+        <a class="contact" href="#">Nous contacter</a>
+    </footer>
+
+</body>
+
+</html>

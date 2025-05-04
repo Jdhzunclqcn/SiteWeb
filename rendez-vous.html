@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rendez-vous.css">
+    <title>EasyVisit - Rendez-vous</title>
+</head>
+<body> 
+
+    <header class="header">
+        <nav class="menu">
+            <ul class="liens">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="rendez-vous.html" target="_blank">Rendez-vous</a></li>
+                <li><a href="trouver-bien.html" target="_blank">Trouver un bien</a></li>
+                <li><a href="a_propos.html" target="_blank">À propos de nous</a></li>
+            </ul>
+
+            <button class="login-button">Connexion</button>
+        </nav>    
+    </header>
+
+    <section class="box">
+        <header>
+            <h1>EasyVisit</h1>
+            <p>Prenez rendez-vous avec l'un de nos agents immobiliers</p>
+        </header>
+
+        <form class="formulaire">
+            <div class="partie-formulaire">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="partie-formulaire">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="partie-formulaire">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="partie-formulaire">
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="partie-formulaire">
+                <label for="time">Heure souhaitée</label>
+                <select id="time" required>
+                    <option value="">Choisir une heure</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+            </div>
+
+            <div class="partie-formulaire">
+                <label for="type">Type de bien recherché</label>
+                <select id="type" required>
+                    <option value="">Sélectionner le type de bien</option>
+                    <option value="appartement">Appartement</option>
+                    <option value="maison">Maison</option>
+                    <option value="villa">Villa</option>
+                    <option value="terrain">Terrain</option>
+                </select>
+            </div>
+
+            <button class="envoyer" type="submit">Prendre rendez-vous</button>
+        </form>
+        </section>
+
+    <footer class="footer">
+        <p>© EasyVisit 2025 - Tous droits réservés - <a href="#">Politique de confidentialité</a> – <a href="#">Mentions légales</a> – <a href="#">Agences immobilières</a></p>
+        <a class="contact" href="#">Nous contacter</a>
+    </footer>
+
+</body>
+</html>
